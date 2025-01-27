@@ -1,86 +1,92 @@
 # Interpreter Math C
 
-Bem-vindo ao **Interpreter Math C**, um programa desenvolvido em C que avalia expressões matemáticas, manipula variáveis, suporta funções matemáticas e exibe um histórico dos cálculos realizados.
+Welcome to **Interpreter Math C**, a C program designed to evaluate mathematical expressions, manipulate variables, support mathematical functions, and display a history of previous calculations.
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- **Cálculo de expressões matemáticas**:
-  - Suporte a operações básicas: `+`, `-`, `*`, `/`, `^`, `%`.
-  - Suporte a operadores lógicos: `&&` (AND lógico), `||` (OR lógico).
-  - Cálculo de fatoriais usando `!`.
-  
-- **Suporte a funções matemáticas**:
+- **Mathematical Expression Evaluation**:
+  - Supports basic operations: `+`, `-`, `*`, `/`, `^`, `%`.
+  - Supports logical operators: `&&` (AND), `||` (OR).
+  - Factorial calculation using `!`.
+
+- **Mathematical Functions**:
   - `sin(x)`, `cos(x)`, `tan(x)`, `log(x)`, `sqrt(x)`.
 
-- **Manipulação de variáveis**:
-  - Definir variáveis: `x = 5`.
-  - Usar variáveis em expressões: `x + 10`.
+- **Variable Management**:
+  - Define variables: `x = 5`.
+  - Use variables in expressions: `x + 10`.
 
-- **Histórico de cálculos**:
-  - Exibir histórico.
-  - Exportar histórico para um arquivo `.txt`.
+- **Calculation History**:
+  - View the history of previous calculations.
+  - Export the history to a `.txt` file.
 
-- **Interface simples e amigável**:
-  - Menus claros e comandos para interagir com o programa.
+- **Simple and User-Friendly Interface**:
+  - Clear menus and commands to interact with the program.
 
 ---
 
-## 🖥️ Como Usar
+## 🖥️ How to Use
 
-### 🟢 Comandos Disponíveis:
-- `q` ou `sair`: Finalizar o programa.
-- `ajuda`: Exibir operadores e funções disponíveis.
-- `limpar`: Limpar a tela.
-- `historico`: Exibir cálculos realizados anteriormente.
-- `exportar`: Salvar o histórico em um arquivo chamado `historico_calculos.txt`.
+### 🟢 Available Commands:
+- `q` or `exit`: Exit the program.
+- `help`: Display available operators and functions.
+- `clear`: Clear the screen.
+- `history`: View past calculations.
+- `export`: Save the history to a file named `historical_calculations.txt`.
 
-### 🟢 Exemplos de Uso:
-1. Operações básicas:
+### 🟢 Usage Examples:
+1. Basic operations:
    - `2 + 3 * 4`
    - `(2 + 3) * 4`
-2. Funções matemáticas:
+2. Mathematical functions:
    - `sin(pi/2)`
    - `sqrt(16)`
-3. Definir variáveis:
+3. Defining variables:
    - `x = 10`
    - `y = x + 5`
-4. Usar constantes:
+4. Using constants:
    - `pi * 2`
    - `e^2`
 
 ---
 
-## 🧩 Estrutura do Código
+## 🧩 Code Structure
 
-### **Principais Componentes**
-1. **Manipulação de pilha**:
-   - Estruturas para gerenciar números e operadores.
-2. **Histórico**:
-   - Registra as últimas 10 expressões avaliadas e seus resultados.
-   - Exporta o histórico para um arquivo.
-3. **Variáveis**:
-   - Armazena até 10 variáveis.
-   - Suporte a operações envolvendo variáveis.
-4. **Funções matemáticas**:
-   - Inclui suporte a funções como seno, cosseno, logaritmo, entre outras.
-
----
-
-## 📄 Exportação de Histórico
-O histórico de cálculos pode ser salvo no arquivo `historico_calculos.txt` para referência futura. O arquivo conterá todas as expressões calculadas junto com seus resultados.
+### **Main Components**
+1. **Stack Manipulation**:
+   - Structures to manage numbers and operators.
+2. **History**:
+   - Stores the last 10 evaluated expressions and their results.
+   - Exports the history to a file.
+3. **Variables**:
+   - Stores up to 10 variables.
+   - Supports operations involving variables.
+4. **Mathematical Functions**:
+   - Includes support for functions like sine, cosine, logarithm, etc.
 
 ---
 
-## ⚙️ Requisitos
-- Compilador C (ex.: GCC).
-- Sistema operacional Windows, Linux ou macOS.
+## 📄 History Export
+The calculation history can be saved to a file called `historical_calculations.txt` for future reference. The file will contain all the evaluated expressions along with their results.
 
 ---
 
-## 🛠️ Compilação e Execução
+## ⚙️ Requirements
+- C Compiler (e.g., GCC).
+- Operating system: Windows, Linux, or macOS.
 
-### **Compilar**:
+---
+
+## 🛠️ Compilation and Execution
+
+### **Compile**:
 ```bash
 gcc -o interpreter_math_c main.c -lm
+```
+
+### **Run**:
+```bash
+./interpreter_math_c
+```
